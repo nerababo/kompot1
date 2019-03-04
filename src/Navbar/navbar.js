@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./navbar.css";
+import "./navbar.scss";
 import logo from "../Assets/Pics/logo.png"
 
 
@@ -7,26 +7,41 @@ import logo from "../Assets/Pics/logo.png"
 class navbar extends Component {
     render() {
         return (
-            /* eslint-disable no-console */
+
             <div>
-                <ul className="navigation">
-                    <li><div className="logo">
-                        <img src={logo} alt="logo" /></div></li>
+                <header>
+                    <h2 className="logo"><img src={logo} alt="logo" /></h2>
+                    <input type="checkbox" id="nav-toggle" className="nav-toggle" />
+                    <nav>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/">About</a></li>
+                            <li><a href="/">Blog</a></li>
+                            <li><a href="/">Contact</a></li>
+                            <li><a href="/">Contact1</a></li>
+                            <li><a href="/">Contact2</a></li>
+                            <li><a href="/">Contact3</a></li>
+                            <li><a href="/">Contact4</a></li>
+                            <li><a href="/">Contact5</a></li>
+                            <li><a href="/">Contact6</a></li>
 
-                    <li ><a href="/" >Početna</a></li>
+                        </ul>
+                    </nav>
+                    <label for="nav-toggle" className="nav-toggle-label">
+                        <span></span>
+                    </label>
+                </header>
 
-                    <li ><a href="/" >Cambridge ispiti</a></li>
-                    <li ><a href="/" >O nama</a></li>
-                    <li ><a href="/" >Kursevi jezika</a></li>
-                    <li ><a href="/" >Zašto baš Cambrige English</a></li>
-                    <li ><a href="/" >Prijava</a></li>
-                    <li ><a href="/" >Prevodilačke usluge</a></li>
-                    <li ><a href="/" >Reference</a></li>
-                    <li ><a href="/" >Kontakt</a></li>
-                    <li ><a href="/" >Cijene</a></li>
-                </ul>
+
+
+
+
+                <div className="content">
+                    <h2>Your content would go here</h2>
+                </div>
 
             </div>
+
 
         );
     }
