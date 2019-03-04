@@ -10,7 +10,7 @@ class navbar extends Component {
 
             <div>
                 <header>
-                    <h2 className="logo"><img src={logo} alt="logo" /></h2>
+                    <div><img src={logo} alt="logo" /></div>
                     <input type="checkbox" id="nav-toggle" className="nav-toggle" />
                     <nav>
                         <ul>
